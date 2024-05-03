@@ -1,1 +1,24 @@
 STAMPA DEL CAMPO ------> Pesenti
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int lunghezza=10;
+        int larghezza=10;
+        int[][]matrice=new int [lunghezza][larghezza];
+        boolean[][]MatriceBooleana=new boolean[lunghezza][larghezza];
+        StampaCampo(matrice,lunghezza,larghezza);
+    }
+    public static void StampaCampo (int[][]matrice, int lunghezza, int larghezza)
+    {
+        for (int i=0;i<larghezza;i++)
+        {
+            for (int j=0;j<lunghezza;j++)
+            {
+                System.out.print(matrice[i][j] + "  ");
+            }
+            System.out.println();
+        }
+    }
+}
