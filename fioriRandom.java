@@ -1,4 +1,4 @@
-import java.util.Scaner;
+import java.util.Random;
 public static void PosizionamentoFiori(int[][] matrice){
     Random random=new Random();
     for (int i=0; i< matrice.length;i++){
