@@ -1,0 +1,8 @@
+import java.util.Scanner;
+private static matrice[][](int matrice[][], int i, int j);{
+boolean controllo=false;
+if(matrice[i][j]=9)
+  return true;
+    else
+  return false;
+}
