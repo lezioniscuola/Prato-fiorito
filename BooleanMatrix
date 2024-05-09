@@ -1,1 +1,5 @@
-Funzione che crea una matrice di booleani -------> Gusmini
+//Funzione che crea una matrice di booleani 
+private static boolean[][] Creamatriceboolean(int lunghezza,int larghezza) { 
+    boolean[][]booleanmatrix= new boolean[larghezza][lunghezza];
+    return booleanmatrix;
+}
