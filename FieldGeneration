@@ -3,13 +3,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int lunghezza=0;
-        int larghezza=0;       
-        int[][] matrice = new int [larghezza] [lunghezza];
+        int lunghezza;
+        int larghezza;
         System.out.println("metti la larghezza");
         larghezza=in.nextInt();
         System.out.println("metti la lunghezza");
         lunghezza=in.nextInt();
+        int [][] matrice=creamatrice(larghezza, lunghezza);
     }
-    
+    public static int [][] creamatrice ( int larghezza,int lunghezza){
+        int[][] matrice = new int [larghezza] [lunghezza];
+        return matrice;
+    }
 }
