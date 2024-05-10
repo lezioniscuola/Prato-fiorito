@@ -18,7 +18,7 @@ public class PratoFiorito {
         PosizionamentoFiori(matrice, matriceBoolean);
         do{
             StampaCampo(matrice, matriceBoolean, lunghezza, larghezza);
-            System.out.println("Inserisci le coordinate della tua scelta(prima la larghezza e poi la lunghezza)");
+            System.out.println("Inserisci le coordinate della tua scelta(prima la lunghezza e poi la larghezza)");
             i=in.nextInt()-1;
             j=in.nextInt()-1;
             control = FlowerControl(matrice, i, j);
@@ -58,11 +58,12 @@ public class PratoFiorito {
     public static void StampaCampo (int[][]matrice, boolean[][]matriceBoolean, int lunghezza, int larghezza){
         for (int i=0;i<larghezza;i++){
             for (int j=0;j<lunghezza;j++){
+                char quadrato = 9632;
                 if(matriceBoolean[i][j]==true&&matrice[i][j]!=9) {
                     System.out.print(matrice[i][j] + "  ");
                 }
                 else{
-                    System.out.print(0 + "  ");
+                    System.out.print(quadrato + "  ");
                 }
             }
             System.out.println();
