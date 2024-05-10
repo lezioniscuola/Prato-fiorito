@@ -1,0 +1,25 @@
+import java.util.Random;
+public static void posizionamentoFiori(int[][] matrice){
+    Random random=new Random();
+    for (int i=0; i< matrice.length;i++){
+        for(int j=0; j<matrice[i].length;j++){
+            if (random.nextInt(4)==1) {
+                matrice[i][j] = 9;
+                incrementoAdiacenti(matrice, i, j);
+            }
+        }
+    }
+}
+public static void incrementoAdiacenti(int[][] matrice, int i, int j){
+    for (int x = -1; x <= 1; x++) {
+        for (int y = -1; y <= 1; y++) {
+            if (x == 0 && y == 0)
+                continue;
+            int leftRight = i + x;
+            int upDown = j + y;
+            if (leftRight >= 0 && leftRight < matrice.length && upDown >= 0 && upDown < matrice[i].length && matrice[leftRight][upDown] != 9) {
+                matrice[leftRight][upDown]++;
+            }
+        }
+    }
+}
