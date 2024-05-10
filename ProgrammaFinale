@@ -49,7 +49,7 @@ public class PratoFiorito {
             for (int j = 0; j < matrice[i].length; j++) {
                 if (random.nextInt(4) == 1) {
                     matrice[i][j] = 9;
-                    matriceBoolean[i][j] = false;
+                    matriceBoolean[i][j] = true;
                     incrementoAdiacenti(matrice, i, j);
                 }
             }
