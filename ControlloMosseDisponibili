@@ -1,0 +1,12 @@
+public static boolean ControlloMosseDisponibili(boolean[][] matriceBoolean, int lunghezza, int larghezza ) {
+        boolean vittoria = true;
+        for (int i = 0; i < larghezza; i++) {
+            for (int j = 0; j < lunghezza; j++) {
+                if (matriceBoolean[i][j]==false) {
+                    vittoria = false;
+                    break;
+                }
+            }
+        }
+        return vittoria;
+    }
