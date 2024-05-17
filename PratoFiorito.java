@@ -155,9 +155,9 @@ public class PratoFiorito {
                     continue;
                 int leftRight = i + x;
                 int upDown = j + y;
-                if (leftRight >= 0 && leftRight < matrice.length && upDown >= 0 && upDown < matrice[i].length
-                        && matrice[leftRight][upDown] != 9) {
-                    matrice[leftRight][upDown]++;
+                if (upDown >= 0 && upDown < matrice.length && leftRight >= 0 && leftRight < matrice[i].length
+                        && matrice[upDown][leftRight] != 9) {
+                    matrice[upDown][leftRight]++;
                 }
             }
         }
