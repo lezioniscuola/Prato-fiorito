@@ -19,7 +19,7 @@ public class PratoFiorito {
         PosizionamentoFiori(matrice, matriceBoolean);
         do {
             StampaCampo(matrice, matriceBoolean, lunghezza, larghezza);
-            System.out.println("Inserisci le coordinate della tua scelta(prima la colonna e poi la riga)");
+            System.out.println("Inserisci le coordinate della tua scelta(prima la riga e poi la colonna)");
             System.out.print(">> ");
             i = in.nextInt() - 1;
             j = in.nextInt() - 1;
@@ -112,7 +112,7 @@ public class PratoFiorito {
                         try {
                             checkZeros(matrice, matriceBoolean, new_x, new_y);
                         } catch (StackOverflowError e) {
-                            matriceBoolean[i][j] = true;
+                            ;
                         }
                     }
                 }
