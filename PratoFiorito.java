@@ -153,11 +153,11 @@ public class PratoFiorito {
             for (int y = -1; y <= 1; y++) {
                 if (x == 0 && y == 0)
                     continue;
-                int leftRight = i + x;
-                int upDown = j + y;
-                if (upDown >= 0 && upDown < matrice.length && leftRight >= 0 && leftRight < matrice[i].length
-                        && matrice[upDown][leftRight] != 9) {
-                    matrice[upDown][leftRight]++;
+                int a = i + x;
+                int b = j + y;
+                if (a >= 0 && a < matrice.length && b >= 0 && b < matrice[i].length
+                        && matrice[a][b] != 9) {
+                    matrice[a][b]++;
                 }
             }
         }
